@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище SportModelContainer" CdmEntityContainer="SportEntities1">
+    <EntitySetMapping Name="TennisPlayers">
+      <EntityTypeMapping TypeName="SportModel.TennisPlayer">
+        <MappingFragment StoreEntitySet="TennisPlayer">
+          <ScalarProperty Name="FIOSportsman" ColumnName="FIOSportsman" />
+          <ScalarProperty Name="NameSportsman" ColumnName="NameSportsman" />
+          <ScalarProperty Name="OtchSportsman" ColumnName="OtchSportsman" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+          <ScalarProperty Name="FIOTrener" ColumnName="FIOTrener" />
+          <ScalarProperty Name="NameTrener" ColumnName="NameTrener" />
+          <ScalarProperty Name="OtchTrener" ColumnName="OtchTrener" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Rating2018" ColumnName="Rating2018" />
+          <ScalarProperty Name="Rating2019" ColumnName="Rating2019" />
+          <ScalarProperty Name="Rating2020" ColumnName="Rating2020" />
+          <ScalarProperty Name="Rating2021" ColumnName="Rating2021" />
+          <ScalarProperty Name="Rating2022" ColumnName="Rating2022" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

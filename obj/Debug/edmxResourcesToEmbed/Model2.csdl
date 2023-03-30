@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SportModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TennisPlayer">
+    <Key>
+      <PropertyRef Name="FIOSportsman" />
+    </Key>
+    <Property Name="FIOSportsman" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NameSportsman" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OtchSportsman" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Gender" Type="String" MaxLength="7" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Birthday" Type="Int32" Nullable="false" />
+    <Property Name="FIOTrener" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NameTrener" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OtchTrener" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Country" Type="String" MaxLength="56" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Rating2018" Type="Int32" />
+    <Property Name="Rating2019" Type="Int32" />
+    <Property Name="Rating2020" Type="Int32" />
+    <Property Name="Rating2021" Type="Int32" />
+    <Property Name="Rating2022" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="SportEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TennisPlayers" EntityType="Self.TennisPlayer" />
+  </EntityContainer>
+</Schema>

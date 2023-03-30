@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище SportModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "Sport.dbo.TennisPlayer" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="TennisPlayer">
+    <Key>
+      <PropertyRef Name="ФамилияСпортсмена" />
+      <PropertyRef Name="ИмяСпортсмена" />
+      <PropertyRef Name="Пол" />
+      <PropertyRef Name="ГодРождения" />
+      <PropertyRef Name="ФамилияТренера" />
+      <PropertyRef Name="ИмяТренера" />
+      <PropertyRef Name="Страна" />
+    </Key>
+    <Property Name="ФамилияСпортсмена" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="ИмяСпортсмена" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ОтчествоСпортсмена" Type="nvarchar" MaxLength="50" />
+    <Property Name="Пол" Type="nvarchar" MaxLength="7" Nullable="false" />
+    <Property Name="ГодРождения" Type="int" Nullable="false" />
+    <Property Name="ФамилияТренера" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ИмяТренера" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ОтчествоТренера" Type="nvarchar" MaxLength="50" />
+    <Property Name="Страна" Type="nvarchar" MaxLength="56" Nullable="false" />
+    <Property Name="РейтингЗа2018" Type="smallint" />
+    <Property Name="РейтингЗа2019" Type="smallint" />
+    <Property Name="РейтингЗа2020" Type="smallint" />
+    <Property Name="РейтингЗа2021" Type="smallint" />
+    <Property Name="РейтингЗа2022" Type="smallint" />
+  </EntityType>
+  <EntityContainer Name="Хранилище SportModelContainer">
+    <EntitySet Name="TennisPlayer" EntityType="Self.TennisPlayer" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TennisPlayer].[ФамилияСпортсмена] AS [ФамилияСпортсмена], 
+    [TennisPlayer].[ИмяСпортсмена] AS [ИмяСпортсмена], 
+    [TennisPlayer].[ОтчествоСпортсмена] AS [ОтчествоСпортсмена], 
+    [TennisPlayer].[Пол] AS [Пол], 
+    [TennisPlayer].[ГодРождения] AS [ГодРождения], 
+    [TennisPlayer].[ФамилияТренера] AS [ФамилияТренера], 
+    [TennisPlayer].[ИмяТренера] AS [ИмяТренера], 
+    [TennisPlayer].[ОтчествоТренера] AS [ОтчествоТренера], 
+    [TennisPlayer].[Страна] AS [Страна], 
+    [TennisPlayer].[РейтингЗа2018] AS [РейтингЗа2018], 
+    [TennisPlayer].[РейтингЗа2019] AS [РейтингЗа2019], 
+    [TennisPlayer].[РейтингЗа2020] AS [РейтингЗа2020], 
+    [TennisPlayer].[РейтингЗа2021] AS [РейтингЗа2021], 
+    [TennisPlayer].[РейтингЗа2022] AS [РейтингЗа2022]
+    FROM [dbo].[TennisPlayer] AS [TennisPlayer]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

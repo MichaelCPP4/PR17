@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище SportModelContainer" CdmEntityContainer="SportEntities">
+    <EntitySetMapping Name="TennisPlayers">
+      <EntityTypeMapping TypeName="SportModel.TennisPlayer">
+        <MappingFragment StoreEntitySet="TennisPlayer">
+          <ScalarProperty Name="ФамилияСпортсмена" ColumnName="ФамилияСпортсмена" />
+          <ScalarProperty Name="ИмяСпортсмена" ColumnName="ИмяСпортсмена" />
+          <ScalarProperty Name="ОтчествоСпортсмена" ColumnName="ОтчествоСпортсмена" />
+          <ScalarProperty Name="Пол" ColumnName="Пол" />
+          <ScalarProperty Name="ГодРождения" ColumnName="ГодРождения" />
+          <ScalarProperty Name="ФамилияТренера" ColumnName="ФамилияТренера" />
+          <ScalarProperty Name="ИмяТренера" ColumnName="ИмяТренера" />
+          <ScalarProperty Name="ОтчествоТренера" ColumnName="ОтчествоТренера" />
+          <ScalarProperty Name="Страна" ColumnName="Страна" />
+          <ScalarProperty Name="РейтингЗа2018" ColumnName="РейтингЗа2018" />
+          <ScalarProperty Name="РейтингЗа2019" ColumnName="РейтингЗа2019" />
+          <ScalarProperty Name="РейтингЗа2020" ColumnName="РейтингЗа2020" />
+          <ScalarProperty Name="РейтингЗа2021" ColumnName="РейтингЗа2021" />
+          <ScalarProperty Name="РейтингЗа2022" ColumnName="РейтингЗа2022" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
